@@ -1,59 +1,115 @@
-body{
-    background-color: black;
+body {
+  background-color: black;
+  text-align: center;
+  color: #ffff;
+}
+
+header{
     text-align: center;
 }
 
-header > h1,p{
-    color: #ffff;
+h1 {
+  font-size: 2.5rem;
 }
-h1{
-    font-size: 2.5rem;
-}
-p{
-    font-size: 2.1rem;
+p {
+  font-size: 2.1rem;
 }
 
-input{
-    background-color: grey;
-    font-size: 1.3rem;
-    color: white;
+input {
+  background-color: grey;
+  font-size: 1.3rem;
+  color: white;
 }
 
-::placeholder{
-    color: white;
-    text-align: center;
+input[type="text"] {
+  /* margin-top: 100px; */
 }
 
-.name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+a{
+    width: 50%;
 }
 
-.btn{
+
+.anim{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+::placeholder {
+  color: white;
+  text-align: center;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-    margin-top: 50px;
-}
-.userName{
-    margin-top: 30px;
-}
-
-.hideAnim{
-    display: none;
-}
-
-.hideBtn{
-    display: none;
-}
-.showAnim{
-    display: block;
 }
 
 
-  /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
-    header >h1{
-        font-size: 1.6rem;
-    }
-    
+.btn {
+  margin: 50px;
+ 
 }
+.userName {
+  margin-top: 30px;
+}
+
+.hideAnim {
+  display: none;
+}
+
+.hideBtn {
+  display: none;
+}
+.showAnim {
+  display: block;
+}
+
+.buttons {
+  margin-top: 200px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  header > h1 {
+    font-size: 1.6rem;
+  }
+
+  h1 > span {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    text-align: center;
+
+    width: 50%;
+  }
+
+  .desc{
+      font-size: 1.3rem;
+  }
+}
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .btn {
+   /* width: 20%; */
+   
+    margin: 30px;
+   padding-left: 10%;
+   padding-right:10%;
+  }
+}
+
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+   
+ }
