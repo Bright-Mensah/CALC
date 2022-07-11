@@ -1,36 +1,27 @@
-let form = document.getElementById('forms');
+let form = document.getElementById("forms");
 
-
-let btn = document.querySelector('.btn').onclick = (()=>{
-   
-    form.onclick = ((e)=>{
+let btn = (document.querySelector(".btn").onclick = () => {
+  form.onclick = (e) => {
     e.preventDefault();
-    let name =  document.getElementById('name').value;
-   
-    if(name ===''){
-       localStorage.setItem('userName','user'); 
-       document.querySelector('.btn').classList.add('hideBtn');
-       document.querySelector('.hideAnim').classList.add('hideAnim')
+    let name = document.getElementById("name").value;
 
-       
-       wait();
-    }else{
+    if (name === "") {
+      localStorage.setItem("userName", "user");
+      document.querySelector(".btn").classList.add("hideBtn");
+      document.querySelector(".hideAnim").classList.add("showAnim");
 
-        localStorage.setItem('userName',name);
-        document.querySelector('.btn').classList.add('hideBtn');
-        document.querySelector('.hideAnim').classList.add('showAnim');
-        wait();
-    }    
-})
+      wait();
+    } else {
+      localStorage.setItem("userName", name);
+      document.querySelector(".btn").classList.add("hideBtn");
+      document.querySelector(".hideAnim").classList.add("showAnim");
+      wait();
+    }
+  };
 });
 
-   
-function wait(){
-
-
-    setTimeout(() => {
-        
-        window.location.href = './calc.html';
-    }, 4000);
-
+function wait() {
+  setTimeout(() => {
+    window.location.href = "./calc.html";
+  }, 4000);
 }
