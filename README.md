@@ -5,3 +5,8 @@
  Finally, it waits for 4000 milliseconds before navigating back to calc.html
  The code is used to make the button disappear after a certain amount of time.
  The code uses setTimeout function to wait for 4000 milliseconds before redirecting the user back to the homepage.
+
+
+
+
+               
