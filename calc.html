@@ -9,11 +9,22 @@
 
     <link rel="stylesheet" href="calcStyles.css">
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,600&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <!-- google font ends here -->
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome ends here -->
+
 </head>
 <body>
-
+        <main id="swup" class="transition-fade">
     <header>
-        <h1 class="text-success mt-3">Welcome, <span id="result"></span></h1>
+        <h1 class="text-success mt-3 welcome-txt">Welcome, <span id="result"></span></h1>
         <p class="desc">What do you want to do ? </p>
         <div class="container">
             <div class="row">
@@ -33,34 +44,69 @@
 
    
 
-        <div class="row anim">
+        <div  class="row anim ">
             <div class="col-lg-2 col-md-6 col-sm-6">
-                <a href="add.html" class="btn btn-primary btn-lg">Add <span>+</span></a>
+                <a href="/add.html" class="btn btn-primary btn-lg">Add <span>+</span></a>
                
             </div>
             <div class="col-lg-2 col-md-6 col-sm-6">
-                <a href="multiply.html" class="btn btn-success btn-lg">Multiply <span>*</span></a>
+                <a href="/multiply.html" class="btn btn-success btn-lg">Multiply <span>*</span></a>
                
             </div>
             <div class="col-lg-2 col-md-6 col-sm-6">
-                <a href="subtract.html" class="btn btn-warning btn-lg">Subtract <span>-</span></a>
+                <a href="/subtract.html" class="btn btn-warning btn-lg">Subtract <span>-</span></a>
                
             </div>
             <div class="col-lg-2 col-md-6 col-sm-6">
-                <a href="divide.html" class="btn btn-danger btn-lg">Divide <span>/</span></a>
+                <a href="/divide.html" class="btn btn-danger btn-lg">Divide <span>/</span></a>
                
             </div>
         </div>
+
+        <!-- addition section  -->
+          <section id="addition_section">
+                <div class="row">
+                    <div class="col-lg-3 addition_desc">
+                        <span class="fa-solid fa-plus sign text-primary"></span>
+                        <h1>Addition</h1>
+                        <p>The addition is taking two or more numbers and adding them together, 
+                            that is, it is the total sum of 2 or more numbers.</p>
+                    </div>
+                    <div class="col-lg-3 addition_desc">
+                        <span class="fa-solid fa-xmark text-success sign"></span>
+                        <h1>Multiplication</h1>
+                        <p>The basic definition of multiple is manifold. In math, the meaning of a multiple is the product result of one number multiplied by another number.  </p>
+                    </div>
+                    <div class="col-lg-3 addition_desc">
+                        <span class="fa-solid fa-minus text-warning sign"></span>
+                        <h1>Subtraction</h1>
+                        <p>In math, to subtract means to take away from a group or a number of things. When we subtract, the number of things in the group reduces or becomes less.</p>
+                        <p></p>
+                    </div>
+                    <div class="col-lg-3 addition_desc">
+                        <span class="fa-solid fa-divide text-danger sign"></span>
+                        <h1>Divison</h1>
+                        <p>The division is an operation inverse of multiplication. If 3 groups of 4 make 12 in multiplication; 12 divided into 3 equal groups give 4 in each group in division.</p>
+                    </div>
+                </div>
+
+          </section>
+        <!-- addition section ends here -->
    
 
-  
+    </main>
 
-    
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <div class="transition-swipe loading"></div>
 
+        
+        <script  src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        
+        <script  src="/node_modules/swup/dist/swup.min.js"></script>
     <script>
 document.getElementById('result').innerHTML=localStorage.getItem('userName').toUpperCase();
 
     </script>
+
+    <script  src="swup.js"></script>
 </body>
 </html>

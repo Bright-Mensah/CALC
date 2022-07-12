@@ -1,3 +1,5 @@
+
+
 let form = document.getElementById("forms");
 
 let btn = (document.querySelector(".btn").onclick = () => {
@@ -25,3 +27,5 @@ function wait() {
     window.location.href = "./calc.html";
   }, 4000);
 }
+
+
