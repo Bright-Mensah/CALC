@@ -135,7 +135,8 @@ main {
   display: block;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
   display: none;
 }
 
@@ -176,6 +177,7 @@ html.is-leaving .transition-swipe {
   /* transform: scaleX(1); */
   opacity: 1;
 }
+
 /* swup animation ends here */
 
 /* Extra small devices (portrait phones, less than 576px) */

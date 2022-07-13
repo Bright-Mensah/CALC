@@ -1,41 +1,14 @@
-let form = document.getElementById("forms");
+// get the subtraction form
 
-let btn = (document.querySelector(".btn").onclick = () => {
-  form.onclick = (e) => {
-    e.preventDefault();
-    let name = document.getElementById("name").value;
+let divisionForm = document.getElementById("division-form");
 
-    if (name === "") {
-      localStorage.setItem("userName", "user");
-      document.querySelector(".btn").classList.add("hideBtn");
-      document.querySelector(".hideAnim").classList.add("showAnim");
-
-      wait();
-    } else {
-      localStorage.setItem("userName", name);
-      document.querySelector(".btn").classList.add("hideBtn");
-      document.querySelector(".hideAnim").classList.add("showAnim");
-      wait();
-    }
-  };
-});
-
-function wait() {
-  setTimeout(() => {
-    window.location.href = "./calc.html";
-  }, 4000);
-}
-
-// get the addition form
-let additionForm = document.getElementById("addition-form");
-
-let addBtn = (document.querySelector(".addBtn").onclick = (e) => {
+let subBtn = (document.querySelector(".divBtn").onclick = (e) => {
   e.preventDefault();
   //  get first number and second number
   let firstNumber = parseInt(document.getElementById("fNumber").value);
   let secondNumber = parseInt(document.getElementById("sNumber").value);
   let getLoader = document.querySelector(".addAnim");
-  let getBtn = document.querySelector(".addBtn");
+  let getBtn = document.querySelector(".divBtn");
   let displayResult = document.querySelector(".addition-result");
   let showResult = document.querySelector("#result");
 
@@ -48,7 +21,7 @@ let addBtn = (document.querySelector(".addBtn").onclick = (e) => {
   } else if (document.getElementById("sNumber").value === "") {
     // alert('sdsd')
   } else {
-    additionForm.onclick = (e) => {
+    divisionForm.onclick = (e) => {
       e.preventDefault();
       getBtn.classList.add("hideBtn");
       getLoader.classList.add("showAddAnim");
@@ -65,9 +38,9 @@ let addBtn = (document.querySelector(".addBtn").onclick = (e) => {
     let getResult = () => {
       setTimeout(() => {
         getLoader.classList.remove("showAddAnim");
-        let result = firstNumber + secondNumber;
+        let result = firstNumber / secondNumber;
         displayResult.classList.add("showResult");
-        displayResult.innerHTML = `The result for adding  ${firstNumber} + ${secondNumber}  is  ${(showResult.innerHTML =
+        displayResult.innerHTML = `The result for adding  ${firstNumber} / ${secondNumber}  is  ${(showResult.innerHTML =
           result)} `;
         setTimeout(() => {
           getBtn.classList.remove("hideBtn");
@@ -80,4 +53,4 @@ let addBtn = (document.querySelector(".addBtn").onclick = (e) => {
   }
 });
 
-//  addition ends here
+//  subtraction ends here
