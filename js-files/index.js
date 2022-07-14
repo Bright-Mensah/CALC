@@ -1,3 +1,6 @@
+// display the toast message
+$(".toast").toast("show");
+
 let form = document.getElementById("forms");
 
 let btn = (document.querySelector(".btn").onclick = () => {

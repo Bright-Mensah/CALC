@@ -1,44 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMATHEMATICS</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1 class="text-info mt-3">Welcome to BMATHEMATICS</h1>
-        <p>Kindly tell me your name </p>
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-12 col-md-12 col-sm-12">
-        
-                    <p class="info alert-danger"></p>
-                </div>
-            </div>
+      <h1 class="text-info mt-3">Welcome to BMATHEMATICS</h1>
+      <p>Kindly tell me your name</p>
+      <!-- add toast here -->
+      <!-- Flexbox container for aligning the toasts -->
+      <div
+        aria-live="polite"
+        aria-atomic="true"
+        class="d-flex justify-content-center align-items-center"
+        style="height: 60px"
+      >
+        <!-- Then put toasts within -->
+        <div
+          class="toast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+          data-delay="4000"
+        >
+          <div class="toast-header">
+            <!-- <img src="..." class="rounded mr-2" alt="..." /> -->
+            <strong class="mr-auto text-info">BMATHEMATICS</strong>
+            <small>now</small>
+            <button
+              type="button"
+              class="ml-2 mb-1 close"
+              data-dismiss="toast"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body text-dark">
+            Hello, Kindly note that Name is optional
+          </div>
         </div>
+      </div>
+      <!-- add toast ends here -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <p class="info alert-danger"></p>
+          </div>
+        </div>
+      </div>
     </header>
     <div class="container name">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-
-                <lottie-player  src="https://assets4.lottiefiles.com/packages/lf20_biyah4ot.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-                <form   name="form" id="forms"  >
-                    <input class="userName" type="text" id="name" placeholder="Enter your name"  required>
-                    <br>
-                    <input  class="btn btn-success " type="submit" value="Continue">
-                    <lottie-player class="hideAnim" src="https://assets4.lottiefiles.com/private_files/lf30_5ccckbrw.json"  background="transparent"  speed="1"  style="width: 300px; height: 100px;"  loop  autoplay></lottie-player>
-                </form>
-            </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <lottie-player
+            src="https://assets4.lottiefiles.com/packages/lf20_biyah4ot.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></lottie-player>
+          <form name="form" id="forms">
+            <input
+              class="userName"
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+            <br />
+            <input class="btn btn-success" type="submit" value="Continue" />
+            <lottie-player
+              class="hideAnim"
+              src="https://assets4.lottiefiles.com/private_files/lf30_5ccckbrw.json"
+              background="transparent"
+              speed="1"
+              style="width: 300px; height: 100px"
+              loop
+              autoplay
+            ></lottie-player>
+          </form>
         </div>
+      </div>
     </div>
-   
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="index.js"></script>
-</body>
+    <script src="js-files/index.js"></script>
+  </body>
 </html>
