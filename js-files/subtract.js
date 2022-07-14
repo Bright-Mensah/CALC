@@ -1,3 +1,9 @@
+let back = document.querySelector(".a-tag");
+
+back.addEventListener("click", () => {
+  location.replace("/html-files/calc.html");
+});
+
 // get the subtraction form
 let subtractionForm = document.getElementById("subtraction-form");
 
