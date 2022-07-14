@@ -1,7 +1,7 @@
 let back = document.querySelector(".a-tag");
 
 back.addEventListener("click", () => {
-  location.replace("/html-files/calc.html");
+  location.replace("/CALC/html-files/calc.html");
 });
 
 // get the subtraction form

@@ -26,5 +26,5 @@ let btn = (document.querySelector(".btn").onclick = () => {
 function wait() {
   setTimeout(() => {
     window.location.href = "html-files/./calc.html";
-  }, 4000);
+  }, 5000);
 }
