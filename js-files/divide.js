@@ -1,4 +1,10 @@
-// get the subtraction form
+let back = document.querySelector(".a-tag");
+
+back.addEventListener("click", () => {
+  location.replace("/html-files/calc.html");
+});
+
+// get the divison form
 
 let divisionForm = document.getElementById("division-form");
 
